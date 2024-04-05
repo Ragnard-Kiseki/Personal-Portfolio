@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "933151605116",
+    "firebase_url": "https://information-system-75e7b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "information-system-75e7b",
+    "storage_bucket": "information-system-75e7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933151605116:android:ef860c0b4b4d375241e4f9",
+        "android_client_info": {
+          "package_name": "com.tip.studentinformationsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933151605116-8mqa7kce1btllga2ua5lir2u11hrd29p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxEZR8EvUrYZg7kLnTLd55Zh5cw_GhDEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933151605116-8mqa7kce1btllga2ua5lir2u11hrd29p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

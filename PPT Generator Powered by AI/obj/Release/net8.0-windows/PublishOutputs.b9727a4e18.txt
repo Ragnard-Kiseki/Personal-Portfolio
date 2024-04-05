@@ -1,0 +1,8 @@
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\PPTGenerator.exe
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\PPTGenerator.dll
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\PPTGenerator.deps.json
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\PPTGenerator.runtimeconfig.json
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\PPTGenerator.pdb
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\Guna.UI2.dll
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\System.Management.dll
+C:\Users\arias\OneDrive\Desktop\C# Upwork\PPTGenerator\bin\Release\net8.0-windows\publish\runtimes\win\lib\net7.0\System.Management.dll

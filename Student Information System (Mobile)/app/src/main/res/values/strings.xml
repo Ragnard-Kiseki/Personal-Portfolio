@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">T.I.P. Student Information System</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string-array name="year_level">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

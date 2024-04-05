@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/arizonia</item>
+        <item>@font/asset</item>
+        <item>@font/coiny</item>
+        <item>@font/cormorant_infant_bold</item>
+    </array>
+</resources>

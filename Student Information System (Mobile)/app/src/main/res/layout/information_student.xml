@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".StudentInformation">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tipsis1" />
+
+    <ToggleButton
+        android:id="@+id/toggle_menuOption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_toggle"
+        android:text="ToggleButton"
+        android:textColor="#F9E048"
+        android:textOff="Menu Option"
+        android:textOn="Menu Option"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_addStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#5E5E5E"
+        android:text="Add Student"
+        android:textColor="#F9E048"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editStudent"
+        app:layout_constraintEnd_toEndOf="@+id/toggle_menuOption"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/toggle_menuOption"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_menuOption" />
+
+    <Button
+        android:id="@+id/btn_viewStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E5E5E"
+        android:text="View Student"
+        android:textColor="#F9E048"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btn_deleteStudent"
+        app:layout_constraintStart_toStartOf="@+id/btn_deleteStudent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteStudent" />
+
+    <Button
+        android:id="@+id/btn_editStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E5E5E"
+        android:text="Edit Student"
+        android:textColor="#F9E048"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_deleteStudent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addStudent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_addStudent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addStudent" />
+
+    <Button
+        android:id="@+id/btn_deleteStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E5E5E"
+        android:text="Delete Student"
+        android:textColor="#F9E048"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_viewStudent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_editStudent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_editStudent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editStudent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
