@@ -1,30 +1,13 @@
 package view;
 
-import java.awt.EventQueue;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import java.awt.Color;
-import java.awt.BorderLayout;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
-import java.awt.Toolkit;
-import javax.swing.JPanel;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-import javax.swing.UIManager;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class MainView extends JFrame {
@@ -40,6 +23,8 @@ public class MainView extends JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		File directory = new File("./");
+		System.out.println(directory.getAbsolutePath());
 		EventQueue.invokeLater(new Runnable() {
 			@SuppressWarnings("static-access")
 			public void run() {
@@ -78,10 +63,10 @@ public class MainView extends JFrame {
 		UIManager.put("Button.foreground", new Color(249, 224, 72));
 		frmTipStudentInformation = new JFrame();
 		frmTipStudentInformation.setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\tip logo.jpg"));
+				.getImage("src\\images\\tip logo.jpg"));
 		frmTipStudentInformation.getContentPane().setBackground(new Color(53, 53, 53));
 		BufferedImage TIPimage = ImageIO
-				.read(new File("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\TIPSIS1.png"));
+				.read(new File("src\\images\\TIPSIS1.png"));
 
 		JPanel imagepanel = new JPanel();
 		imagepanel.setBackground(new Color(53, 53, 53));

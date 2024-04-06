@@ -1,32 +1,19 @@
 package view;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.EventQueue;
-import java.awt.FlowLayout;
-import java.awt.Toolkit;
+import net.miginfocom.swing.MigLayout;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.JToggleButton;
-import javax.swing.UIManager;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class StudentInformationView extends JFrame {
@@ -41,6 +28,7 @@ public class StudentInformationView extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+
 					StudentInformationView frame = new StudentInformationView();
 					frame.setVisible(true);
 				} catch (Exception e) {
@@ -65,7 +53,7 @@ public class StudentInformationView extends JFrame {
 		UIManager.put("PopupMenu.border", new LineBorder(new Color(53, 53, 53)));
 		setBackground(new Color(53, 53, 53));
 		setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\tip logo.jpg"));
+				.getImage("src\\images\\tip logo.jpg"));
 		setTitle("T.I.P Student Information");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(450, 100, 538, 500);
@@ -77,7 +65,7 @@ public class StudentInformationView extends JFrame {
 		setContentPane(contentPane);
 
 		BufferedImage TIPimage = ImageIO
-				.read(new File("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\TIPSIS1.png"));
+				.read(new File("src\\images\\TIPSIS1.png"));
 		JPanel imagepanel = new JPanel();
 		imagepanel.setBackground(new Color(53, 53, 53));
 		contentPane.add(imagepanel, BorderLayout.NORTH);
@@ -165,7 +153,7 @@ public class StudentInformationView extends JFrame {
 		btnViewTable.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					File studentInformation = new File("studentData//studentinformation.txt");
+					File studentInformation = new File("src\\studentData\\studentinformation.txt");
 					if (studentInformation.exists() == true) {
 						new ViewSortedTable().setVisible(true);
 						dispose();

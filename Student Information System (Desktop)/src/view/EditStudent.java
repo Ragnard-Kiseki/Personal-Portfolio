@@ -1,16 +1,14 @@
 package view;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.SystemColor;
-import java.awt.Toolkit;
+import controller.EditFileController;
+import model.StudentInformationModel;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -20,32 +18,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.ListSelectionModel;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
-import javax.swing.table.DefaultTableModel;
-
-import controller.EditFileController;
-import model.StudentInformationModel;
 
 @SuppressWarnings("serial")
 public class EditStudent extends JFrame {
@@ -99,7 +71,7 @@ public class EditStudent extends JFrame {
 		UIManager.put("Button.background", new Color(94, 94, 94));
 		UIManager.put("Button.foreground", new Color(249, 224, 72));
 		setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\tip logo.jpg"));
+				.getImage("src\\images\\tip logo.jpg"));
 		setTitle("T.I.P Student Information");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(25, 25, 1366, 768);
@@ -110,7 +82,7 @@ public class EditStudent extends JFrame {
 		setContentPane(contentPane);
 
 		BufferedImage TIPimage = ImageIO
-				.read(new File("C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\TIPSIS1.png"));
+				.read(new File("src\\images\\TIPSIS1.png"));
 
 		JPanel panelMenuBar = new JPanel();
 		panelMenuBar.setForeground(new Color(249, 224, 72));
@@ -209,7 +181,7 @@ public class EditStudent extends JFrame {
 		mntmViewOption.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					File studentInformation = new File("studentData//studentinformation.txt");
+					File studentInformation = new File("src\\studentData\\studentinformation.txt");
 					if (studentInformation.exists() == true) {
 						new ViewSortedTable().setVisible(true);
 						dispose();
@@ -464,7 +436,7 @@ public class EditStudent extends JFrame {
 		DefaultTableModel add_row = (DefaultTableModel) table.getModel();
 
 		// Use the automatic Source file.
-		File studentInformation = new File("studentData//studentinformation.txt");
+		File studentInformation = new File("src\\studentData\\studentinformation.txt");
 
 		// To show the table like in the add table.
 		if (studentInformation.exists() == true) {

@@ -1,21 +1,13 @@
 package controller;
 
-import java.awt.Color;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.swing.JOptionPane;
-import javax.swing.UIManager;
-
 import view.MainView;
 
+import javax.swing.*;
+import java.awt.*;
+import java.io.*;
+
 public class btnLogInController {
-	public static File file_check = new File("studentData\\loginData\\login.txt");
+	public static File file_check = new File("src\\studentData\\loginData\\login.txt");
 
 	public void search(String un, String pw) {
 		try {
@@ -26,13 +18,13 @@ public class btnLogInController {
 			UIManager.put("Button.foreground", new Color(249, 224, 72));
 			if (file_check.exists() == false) {
 			} else {
-				FileWriter fw = new FileWriter("studentData\\loginData\\login.txt",true);
+				FileWriter fw = new FileWriter("src\\studentData\\loginData\\login.txt",true);
 				PrintWriter pw1 = new PrintWriter(fw);
 
 				int num2 = 0;
 				BufferedReader br = null;
 
-				br = new BufferedReader(new FileReader("studentData\\loginData\\login.txt"));
+				br = new BufferedReader(new FileReader("src\\studentData\\loginData\\login.txt"));
 				if (br != null) {
 					String st;
 					while ((st = br.readLine()) != null) {
@@ -88,7 +80,7 @@ public class btnLogInController {
 				BufferedReader br = null;
 				BufferedReader br2 = null;
 				br = new BufferedReader(new FileReader(
-						"C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\studentData\\loginData\\login.txt"));
+						"src\\studentData\\loginData\\login.txt"));
 				if (br != null) {
 					String st;
 					while ((st = br.readLine()) != null) {

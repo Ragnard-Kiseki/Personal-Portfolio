@@ -1,17 +1,14 @@
 package controller;
 
-import java.awt.Color;
+import view.StudentInformationView;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.UIManager;
-
-
-import view.StudentInformationView;
 
 public  class SearchController implements KeyListener{
 	
@@ -24,7 +21,7 @@ public  class SearchController implements KeyListener{
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 		File file = new File(
-				"C:\\Users\\AAA\\Desktop\\OOP\\CCS 201 - FinalsProject\\studentData\\studentinformation.txt");
+				"src\\studentData\\studentinformation.txt");
 		UIManager.put("OptionPane.background", new Color(53, 53, 53));
 		UIManager.put("OptionPane.messageForeground", new Color(255, 255, 255));
 		UIManager.put("Panel.background", new Color(53, 53, 53));

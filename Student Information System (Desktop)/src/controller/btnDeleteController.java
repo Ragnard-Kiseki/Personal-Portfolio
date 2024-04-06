@@ -1,20 +1,15 @@
 package controller;
 
-import java.awt.Color;
-import java.awt.Window;
+import view.AddStudent;
+import view.DeleteStudent;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-
-import view.AddStudent;
-import view.DeleteStudent;
 
 public class btnDeleteController implements ActionListener {
 
@@ -28,7 +23,7 @@ public class btnDeleteController implements ActionListener {
 		try {
 
 			int deleterow = DeleteStudent.table.getSelectedRow();
-			File studentInformation = new File("studentData//studentinformation.txt");
+			File studentInformation = new File("src\\studentData\\studentinformation.txt");
 			UIManager.put("OptionPane.background", new Color(53, 53, 53));
 			UIManager.put("OptionPane.messageForeground", new Color(255, 255, 255));
 			UIManager.put("Panel.background", new Color(53, 53, 53));
